@@ -1,108 +1,92 @@
-# SCT_ML_04
-Hand Gesture Recognition
+SCT_ML_04
 
-This project implements a hand gesture recognition system that identifies and classifies different hand gestures from images or video data. It can be used for intuitive human-computer interaction and gesture-based control systems.
+Develop a Hand Gesture Recognition Model
+
+This repository contains a Jupyter Notebook that demonstrates the implementation of a Hand Gesture Recognition model. Below is an overview of the project and how to use it.
+
+Contents
+
+Hand Gesture Recognition Model.ipynb: The main Jupyter Notebook file where the Hand Gesture Recognition model is implemented.
 
 Features
 
-Classifies multiple hand gestures such as "Thumbs Up," "Palm," "Fist," "Peace," and "Okay."
+Data Preprocessing: Handling missing values, normalization, and image preprocessing techniques.
 
-Supports real-time gesture recognition using a webcam.
+Model Implementation: Step-by-step construction of a model for gesture recognition.
 
-Provides a simple Convolutional Neural Network (CNN) architecture.
+Visualization: Graphical representation of data augmentations, model performance, and classification results.
 
-Includes data preprocessing with image augmentation for robust training.
+Evaluation: Metrics to assess the performance of the model, including accuracy, precision, recall, and F1-score.
 
-Requirements
+Prerequisites
 
-Python Libraries:
+Python 3.7 or above
 
-TensorFlow
+Jupyter Notebook
+
+Required Libraries:
 
 NumPy
 
+Pandas
+
+Matplotlib
+
 OpenCV
 
-Matplotlib (optional for visualization)
+TensorFlow/Keras or PyTorch
 
-Install the required packages using:
+Scikit-learn
 
-pip install tensorflow opencv-python numpy matplotlib
+Installation
 
-Dataset
+Clone the repository:
 
-The dataset should consist of images for each gesture category organized into separate folders.
+git clone https://github.com/your-repo/hand-gesture-recognition.git
 
-Example:
+Navigate to the project directory:
 
-path_to_hand_gesture_dataset/
-├── Thumbs_Up/
-├── Palm/
-├── Fist/
-├── Peace/
-├── Okay/
+cd hand-gesture-recognition
 
-You can use an existing dataset or collect your own using a webcam.
+Install the required libraries:
 
-How to Run
+pip install -r requirements.txt
 
-Preprocess Data:
+Usage
 
-Place your dataset in the path_to_hand_gesture_dataset directory.
+Open the Jupyter Notebook:
 
-The script will automatically resize and normalize the images.
+jupyter notebook "Hand Gesture Recognition Model.ipynb"
 
-Train the Model:
+Follow the instructions in the notebook to execute each cell and observe the results.
 
-Run the script to train the model using:
+Results
 
-python hand_gesture_recognition.py
+The notebook provides:
 
-The model will be saved as hand_gesture_model.h5 after training.
+Insights into the dataset used for hand gesture recognition.
 
-Real-Time Gesture Recognition:
+Model architecture and training details.
 
-Ensure you have a webcam connected.
+Visualizations of gesture classifications and prediction results.
 
-Run the script and the model will predict gestures in real-time.
+Evaluation metrics such as Accuracy, Precision, Recall, and F1-score.
 
-Model Details
+Contributing
 
-The model consists of:
-
-Convolutional Layers: Extract spatial features.
-
-Max Pooling Layers: Reduce dimensionality.
-
-Dense Layers: For classification of gestures.
-
-It is trained using categorical crossentropy loss and the Adam optimizer for 20 epochs.
-
-Example Output
-
-During real-time gesture recognition, the model will display:
-
-The webcam feed with the detected gesture label overlaid.
-
-Predictions updated in real-time as gestures change.
-
-Limitations
-
-Accuracy depends on the quality and diversity of the training dataset.
-
-Lighting conditions and background noise may affect performance.
-
-Future Improvements
-
-Use a pretrained CNN (e.g., ResNet) for better feature extraction.
-
-Add dynamic gesture recognition for video sequences using RNNs or 3D-CNNs.
-
-Implement hand segmentation for more robust detection.
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
 License
 
-This project is open-source and available under the MIT License.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Feel free to contribute or raise issues for improvement!
+Contact
+
+For questions or feedback, please contact:
+
+Name: [Dhanush M]
+
+Email: [dhanushdanny0611@gmail.com]
+
+GitHub: [danny0611]
 
