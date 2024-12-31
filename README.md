@@ -84,9 +84,8 @@ Contact
 
 For questions or feedback, please contact:
 
-Name: [Dhanush M]
+Name: [G.Dineshkrishan]
 
-Email: [dhanushdanny0611@gmail.com]
+Email: [dineshkrishan1981@gmail.com]
 
-GitHub: [danny0611]
 
